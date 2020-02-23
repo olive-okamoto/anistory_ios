@@ -17,7 +17,7 @@
 		F818CA1323FC2C6A00FF36F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F818CA1123FC2C6A00FF36F3 /* LaunchScreen.storyboard */; };
 		F818CA1E23FC2C6A00FF36F3 /* anistoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F818CA1D23FC2C6A00FF36F3 /* anistoryTests.swift */; };
 		F818CA2923FC2C6A00FF36F3 /* anistoryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F818CA2823FC2C6A00FF36F3 /* anistoryUITests.swift */; };
-		F818CA3824023D7000FF36F3 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F818CA3724023D7000FF36F3 /* ApiClient.swift */; };
+		F818CA3824023D7000FF36F3 /* GraphQLApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F818CA3724023D7000FF36F3 /* GraphQLApiClient.swift */; };
 		F887E08324026E30008C6099 /* GetViewerWorks.graphql in Resources */ = {isa = PBXBuildFile; fileRef = F887E07624026E30008C6099 /* GetViewerWorks.graphql */; };
 		F887E08424026E30008C6099 /* EpisodeDetails.graphql in Resources */ = {isa = PBXBuildFile; fileRef = F887E07724026E30008C6099 /* EpisodeDetails.graphql */; };
 		F887E08524026E30008C6099 /* GetViewerWatchingEpisodes.graphql in Resources */ = {isa = PBXBuildFile; fileRef = F887E07824026E30008C6099 /* GetViewerWatchingEpisodes.graphql */; };
@@ -75,7 +75,7 @@
 		F818CA2423FC2C6A00FF36F3 /* anistoryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = anistoryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F818CA2823FC2C6A00FF36F3 /* anistoryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = anistoryUITests.swift; sourceTree = "<group>"; };
 		F818CA2A23FC2C6A00FF36F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F818CA3724023D7000FF36F3 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		F818CA3724023D7000FF36F3 /* GraphQLApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLApiClient.swift; sourceTree = "<group>"; };
 		F887E07624026E30008C6099 /* GetViewerWorks.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GetViewerWorks.graphql; sourceTree = "<group>"; };
 		F887E07724026E30008C6099 /* EpisodeDetails.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = EpisodeDetails.graphql; sourceTree = "<group>"; };
 		F887E07824026E30008C6099 /* GetViewerWatchingEpisodes.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GetViewerWatchingEpisodes.graphql; sourceTree = "<group>"; };
@@ -209,7 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				F887E07524026E17008C6099 /* GraphQL */,
-				F818CA3724023D7000FF36F3 /* ApiClient.swift */,
+				F818CA3724023D7000FF36F3 /* GraphQLApiClient.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -489,7 +489,7 @@
 				F818CA0723FC2C6800FF36F3 /* AppDelegate.swift in Sources */,
 				F818CA0923FC2C6800FF36F3 /* SceneDelegate.swift in Sources */,
 				F818CA0B23FC2C6800FF36F3 /* ContentView.swift in Sources */,
-				F818CA3824023D7000FF36F3 /* ApiClient.swift in Sources */,
+				F818CA3824023D7000FF36F3 /* GraphQLApiClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
