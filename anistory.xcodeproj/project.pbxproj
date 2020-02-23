@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		566DFCA25B2CEB98910B6897 /* Pods_anistory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848DC46A19D76C34A3174EF5 /* Pods_anistory.framework */; };
-		F1AF21BE2BEC14BD2DF96CC0 /* Pods_anistory_anistoryUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F8DB5F978C135F34374D8A5 /* Pods_anistory_anistoryUITests.framework */; };
+		63A918F6B13EAA521A048A4B /* Pods_anistory_anistoryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F38A34880B855B12F7290416 /* Pods_anistory_anistoryTests.framework */; };
+		A411CEDBF517DD6273E7DE37 /* Pods_anistory_anistoryUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FEFED308958D0746B507102 /* Pods_anistory_anistoryUITests.framework */; };
+		F80F4A492402D2EA00FBD317 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80F4A482402D2EA00FBD317 /* API.swift */; };
 		F818CA0723FC2C6800FF36F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F818CA0623FC2C6800FF36F3 /* AppDelegate.swift */; };
 		F818CA0923FC2C6800FF36F3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F818CA0823FC2C6800FF36F3 /* SceneDelegate.swift */; };
 		F818CA0B23FC2C6800FF36F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F818CA0A23FC2C6800FF36F3 /* ContentView.swift */; };
@@ -32,7 +34,6 @@
 		F887E08E24026E30008C6099 /* SearchWorks.graphql in Resources */ = {isa = PBXBuildFile; fileRef = F887E08124026E30008C6099 /* SearchWorks.graphql */; };
 		F887E08F24026E30008C6099 /* GetRecords.graphql in Resources */ = {isa = PBXBuildFile; fileRef = F887E08224026E30008C6099 /* GetRecords.graphql */; };
 		F887E09224027A8E008C6099 /* ProfileDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F887E09124027A8E008C6099 /* ProfileDataSource.swift */; };
-		FA33C7ECE676BD8C15112ED1 /* Pods_anistoryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26ADDB22540A74DBEB77E025 /* Pods_anistoryTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,15 +54,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		26ADDB22540A74DBEB77E025 /* Pods_anistoryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_anistoryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		28D0BD55446C06B3CC71348B /* Pods-anistory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-anistory.release.xcconfig"; path = "Target Support Files/Pods-anistory/Pods-anistory.release.xcconfig"; sourceTree = "<group>"; };
 		3042D673E1A67F9EB39AD823 /* Pods-anistory-anistoryUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-anistory-anistoryUITests.release.xcconfig"; path = "Target Support Files/Pods-anistory-anistoryUITests/Pods-anistory-anistoryUITests.release.xcconfig"; sourceTree = "<group>"; };
+		371A6E0A0BF0F059AF65A3A6 /* Pods-anistory-anistoryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-anistory-anistoryTests.debug.xcconfig"; path = "Target Support Files/Pods-anistory-anistoryTests/Pods-anistory-anistoryTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3FEFED308958D0746B507102 /* Pods_anistory_anistoryUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_anistory_anistoryUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		494484C6B49AEFDC7B2BE1E7 /* Pods-anistory-anistoryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-anistory-anistoryTests.release.xcconfig"; path = "Target Support Files/Pods-anistory-anistoryTests/Pods-anistory-anistoryTests.release.xcconfig"; sourceTree = "<group>"; };
 		5B6459B7C126EF553B0F47AE /* Pods-anistoryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-anistoryTests.debug.xcconfig"; path = "Target Support Files/Pods-anistoryTests/Pods-anistoryTests.debug.xcconfig"; sourceTree = "<group>"; };
-		5F8DB5F978C135F34374D8A5 /* Pods_anistory_anistoryUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_anistory_anistoryUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		848DC46A19D76C34A3174EF5 /* Pods_anistory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_anistory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AD030378A9C6CE2A1EAD7B9 /* Pods-anistoryUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-anistoryUITests.debug.xcconfig"; path = "Target Support Files/Pods-anistoryUITests/Pods-anistoryUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AB528EB4246741A86D7762B7 /* Pods-anistoryUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-anistoryUITests.release.xcconfig"; path = "Target Support Files/Pods-anistoryUITests/Pods-anistoryUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DCEE80F7BA60F012443328F4 /* Pods-anistory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-anistory.debug.xcconfig"; path = "Target Support Files/Pods-anistory/Pods-anistory.debug.xcconfig"; sourceTree = "<group>"; };
 		DE0572C28CBF2561B6069F17 /* Pods-anistoryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-anistoryTests.release.xcconfig"; path = "Target Support Files/Pods-anistoryTests/Pods-anistoryTests.release.xcconfig"; sourceTree = "<group>"; };
 		EDC8DA183F317F4B5A0294FA /* Pods-anistory-anistoryUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-anistory-anistoryUITests.debug.xcconfig"; path = "Target Support Files/Pods-anistory-anistoryUITests/Pods-anistory-anistoryUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F38A34880B855B12F7290416 /* Pods_anistory_anistoryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_anistory_anistoryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F80F4A482402D2EA00FBD317 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		F818CA0323FC2C6800FF36F3 /* anistory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = anistory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F818CA0623FC2C6800FF36F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F818CA0823FC2C6800FF36F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,7 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA33C7ECE676BD8C15112ED1 /* Pods_anistoryTests.framework in Frameworks */,
+				63A918F6B13EAA521A048A4B /* Pods_anistory_anistoryTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,7 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1AF21BE2BEC14BD2DF96CC0 /* Pods_anistory_anistoryUITests.framework in Frameworks */,
+				A411CEDBF517DD6273E7DE37 /* Pods_anistory_anistoryUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,8 +131,8 @@
 			isa = PBXGroup;
 			children = (
 				848DC46A19D76C34A3174EF5 /* Pods_anistory.framework */,
-				5F8DB5F978C135F34374D8A5 /* Pods_anistory_anistoryUITests.framework */,
-				26ADDB22540A74DBEB77E025 /* Pods_anistoryTests.framework */,
+				F38A34880B855B12F7290416 /* Pods_anistory_anistoryTests.framework */,
+				3FEFED308958D0746B507102 /* Pods_anistory_anistoryUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -140,6 +146,10 @@
 				3042D673E1A67F9EB39AD823 /* Pods-anistory-anistoryUITests.release.xcconfig */,
 				5B6459B7C126EF553B0F47AE /* Pods-anistoryTests.debug.xcconfig */,
 				DE0572C28CBF2561B6069F17 /* Pods-anistoryTests.release.xcconfig */,
+				8AD030378A9C6CE2A1EAD7B9 /* Pods-anistoryUITests.debug.xcconfig */,
+				AB528EB4246741A86D7762B7 /* Pods-anistoryUITests.release.xcconfig */,
+				371A6E0A0BF0F059AF65A3A6 /* Pods-anistory-anistoryTests.debug.xcconfig */,
+				494484C6B49AEFDC7B2BE1E7 /* Pods-anistory-anistoryTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -211,6 +221,7 @@
 		F818CA3623FC2D9A00FF36F3 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				F80F4A482402D2EA00FBD317 /* API.swift */,
 				F887E07524026E17008C6099 /* GraphQL */,
 				F818CA3724023D7000FF36F3 /* GraphQLApiClient.swift */,
 			);
@@ -253,7 +264,8 @@
 			buildConfigurationList = F818CA2D23FC2C6A00FF36F3 /* Build configuration list for PBXNativeTarget "anistory" */;
 			buildPhases = (
 				8582579B02F1453BDECB26F6 /* [CP] Check Pods Manifest.lock */,
-				F887E0932402BE18008C6099 /* Generate Apollo GraphQL API */,
+				F80F4A432402D0E800FBD317 /* Fix SPM */,
+				F8FEF03C2402C1100026A66C /* Generate Apollo GraphQL API */,
 				F818C9FF23FC2C6800FF36F3 /* Sources */,
 				F818CA0023FC2C6800FF36F3 /* Frameworks */,
 				F818CA0123FC2C6800FF36F3 /* Resources */,
@@ -276,6 +288,7 @@
 				F818CA1523FC2C6A00FF36F3 /* Sources */,
 				F818CA1623FC2C6A00FF36F3 /* Frameworks */,
 				F818CA1723FC2C6A00FF36F3 /* Resources */,
+				093F474BB5F5C7A8A0312F35 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -295,7 +308,7 @@
 				F818CA2023FC2C6A00FF36F3 /* Sources */,
 				F818CA2123FC2C6A00FF36F3 /* Frameworks */,
 				F818CA2223FC2C6A00FF36F3 /* Resources */,
-				E16E5C875074846EEB7081ED /* [CP] Embed Pods Frameworks */,
+				5CDFEF04994FCDC24CCC744A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -391,6 +404,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		093F474BB5F5C7A8A0312F35 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-anistory-anistoryTests/Pods-anistory-anistoryTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-anistory-anistoryTests/Pods-anistory-anistoryTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-anistory-anistoryTests/Pods-anistory-anistoryTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5CDFEF04994FCDC24CCC744A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-anistory-anistoryUITests/Pods-anistory-anistoryUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-anistory-anistoryUITests/Pods-anistory-anistoryUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-anistory-anistoryUITests/Pods-anistory-anistoryUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		665857DD36EFD3DB5CCD811E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -467,31 +514,32 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-anistoryTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-anistory-anistoryTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E16E5C875074846EEB7081ED /* [CP] Embed Pods Frameworks */ = {
+		F80F4A432402D0E800FBD317 /* Fix SPM */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-anistory-anistoryUITests/Pods-anistory-anistoryUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			inputPaths = (
+			);
+			name = "Fix SPM";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-anistory-anistoryUITests/Pods-anistory-anistoryUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-anistory-anistoryUITests/Pods-anistory-anistoryUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "if [ -d \"${SYMROOT}/Release${EFFECTIVE_PLATFORM_NAME}/\" ] && [ \"${SYMROOT}/Release${EFFECTIVE_PLATFORM_NAME}/\" != \"${SYMROOT}/${CONFIGURATION}${EFFECTIVE_PLATFORM_NAME}/\" ] \nthen\n  cp -f -R \"${SYMROOT}/Release${EFFECTIVE_PLATFORM_NAME}/\" \"${SYMROOT}/${CONFIGURATION}${EFFECTIVE_PLATFORM_NAME}/\"\nfi\n";
 		};
-		F887E0932402BE18008C6099 /* Generate Apollo GraphQL API */ = {
+		F8FEF03C2402C1100026A66C /* Generate Apollo GraphQL API */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -507,7 +555,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "APOLLO_FRAMEWORK_PATH=\"$(eval find $FRAMEWORK_SEARCH_PATHS -name \"Apollo.framework\" -maxdepth 1)\"\n\nif [ -z \"$APOLLO_FRAMEWORK_PATH\" ]; then\n  echo \"error: Couldn't find Apollo.framework in FRAMEWORK_SEARCH_PATHS; make sure to add the framework to your project.\"\n  exit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n$APOLLO_FRAMEWORK_PATH/check-and-run-apollo-cli.sh codegen:generate --queries=\"$(find . -name '*.graphql')\" --schema=schema.json API.swift\n";
+			shellScript = "SCRIPT_PATH=\"${PODS_ROOT}/Apollo/scripts\"\ncd \"${SRCROOT}/${TARGET_NAME}\"\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile=\"API/schema.json\" API.swift\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -520,6 +568,7 @@
 				F818CA0923FC2C6800FF36F3 /* SceneDelegate.swift in Sources */,
 				F887E09224027A8E008C6099 /* ProfileDataSource.swift in Sources */,
 				F818CA0B23FC2C6800FF36F3 /* ContentView.swift in Sources */,
+				F80F4A492402D2EA00FBD317 /* API.swift in Sources */,
 				F818CA3824023D7000FF36F3 /* GraphQLApiClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -723,7 +772,7 @@
 		};
 		F818CA3123FC2C6A00FF36F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B6459B7C126EF553B0F47AE /* Pods-anistoryTests.debug.xcconfig */;
+			baseConfigurationReference = 371A6E0A0BF0F059AF65A3A6 /* Pods-anistory-anistoryTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -745,7 +794,7 @@
 		};
 		F818CA3223FC2C6A00FF36F3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE0572C28CBF2561B6069F17 /* Pods-anistoryTests.release.xcconfig */;
+			baseConfigurationReference = 494484C6B49AEFDC7B2BE1E7 /* Pods-anistory-anistoryTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

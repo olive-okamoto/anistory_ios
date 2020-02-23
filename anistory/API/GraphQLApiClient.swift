@@ -7,7 +7,6 @@
 //
 
 import Apollo
-import ApolloSQLite
 
 class GraphQLApiClient {
     private static var baseURL: URL {
@@ -32,7 +31,9 @@ class GraphQLApiClient {
         do {
             let fileURL = try temporarySQLiteFileURL()
             let sqliteCache = try SQLiteNormalizedCache(fileURL: fileURL)
-            return ApolloClient(networkTransport: transport, store: sqliteCache)
+            // TODO : import Apollo/SQLite
+            //return ApolloClient(networkTransport: transport, store: sqliteCache)
+            return ApolloClient(networkTransport: transport)
         } catch {
             return ApolloClient(networkTransport: transport)
         }
