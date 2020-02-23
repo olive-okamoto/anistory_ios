@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,19 @@
 		F818CA1E23FC2C6A00FF36F3 /* anistoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F818CA1D23FC2C6A00FF36F3 /* anistoryTests.swift */; };
 		F818CA2923FC2C6A00FF36F3 /* anistoryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F818CA2823FC2C6A00FF36F3 /* anistoryUITests.swift */; };
 		F818CA3824023D7000FF36F3 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F818CA3724023D7000FF36F3 /* ApiClient.swift */; };
+		F887E08324026E30008C6099 /* GetViewerWorks.graphql in Resources */ = {isa = PBXBuildFile; fileRef = F887E07624026E30008C6099 /* GetViewerWorks.graphql */; };
+		F887E08424026E30008C6099 /* EpisodeDetails.graphql in Resources */ = {isa = PBXBuildFile; fileRef = F887E07724026E30008C6099 /* EpisodeDetails.graphql */; };
+		F887E08524026E30008C6099 /* GetViewerWatchingEpisodes.graphql in Resources */ = {isa = PBXBuildFile; fileRef = F887E07824026E30008C6099 /* GetViewerWatchingEpisodes.graphql */; };
+		F887E08624026E30008C6099 /* UpdateStatus.graphql in Resources */ = {isa = PBXBuildFile; fileRef = F887E07924026E30008C6099 /* UpdateStatus.graphql */; };
+		F887E08724026E30008C6099 /* SearchWorksByTitle.graphql in Resources */ = {isa = PBXBuildFile; fileRef = F887E07A24026E30008C6099 /* SearchWorksByTitle.graphql */; };
+		F887E08824026E30008C6099 /* GetViewerInfo.graphql in Resources */ = {isa = PBXBuildFile; fileRef = F887E07B24026E30008C6099 /* GetViewerInfo.graphql */; };
+		F887E08924026E30008C6099 /* DeleteRecord.graphql in Resources */ = {isa = PBXBuildFile; fileRef = F887E07C24026E30008C6099 /* DeleteRecord.graphql */; };
+		F887E08A24026E30008C6099 /* CreateRecord.graphql in Resources */ = {isa = PBXBuildFile; fileRef = F887E07D24026E30008C6099 /* CreateRecord.graphql */; };
+		F887E08B24026E30008C6099 /* SearchWorksByID.graphql in Resources */ = {isa = PBXBuildFile; fileRef = F887E07E24026E30008C6099 /* SearchWorksByID.graphql */; };
+		F887E08C24026E30008C6099 /* GetFollowingActivities.graphql in Resources */ = {isa = PBXBuildFile; fileRef = F887E07F24026E30008C6099 /* GetFollowingActivities.graphql */; };
+		F887E08D24026E30008C6099 /* Fragment.graphql in Resources */ = {isa = PBXBuildFile; fileRef = F887E08024026E30008C6099 /* Fragment.graphql */; };
+		F887E08E24026E30008C6099 /* SearchWorks.graphql in Resources */ = {isa = PBXBuildFile; fileRef = F887E08124026E30008C6099 /* SearchWorks.graphql */; };
+		F887E08F24026E30008C6099 /* GetRecords.graphql in Resources */ = {isa = PBXBuildFile; fileRef = F887E08224026E30008C6099 /* GetRecords.graphql */; };
 		FA33C7ECE676BD8C15112ED1 /* Pods_anistoryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26ADDB22540A74DBEB77E025 /* Pods_anistoryTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +76,19 @@
 		F818CA2823FC2C6A00FF36F3 /* anistoryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = anistoryUITests.swift; sourceTree = "<group>"; };
 		F818CA2A23FC2C6A00FF36F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F818CA3724023D7000FF36F3 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		F887E07624026E30008C6099 /* GetViewerWorks.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GetViewerWorks.graphql; sourceTree = "<group>"; };
+		F887E07724026E30008C6099 /* EpisodeDetails.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = EpisodeDetails.graphql; sourceTree = "<group>"; };
+		F887E07824026E30008C6099 /* GetViewerWatchingEpisodes.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GetViewerWatchingEpisodes.graphql; sourceTree = "<group>"; };
+		F887E07924026E30008C6099 /* UpdateStatus.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UpdateStatus.graphql; sourceTree = "<group>"; };
+		F887E07A24026E30008C6099 /* SearchWorksByTitle.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SearchWorksByTitle.graphql; sourceTree = "<group>"; };
+		F887E07B24026E30008C6099 /* GetViewerInfo.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GetViewerInfo.graphql; sourceTree = "<group>"; };
+		F887E07C24026E30008C6099 /* DeleteRecord.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DeleteRecord.graphql; sourceTree = "<group>"; };
+		F887E07D24026E30008C6099 /* CreateRecord.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CreateRecord.graphql; sourceTree = "<group>"; };
+		F887E07E24026E30008C6099 /* SearchWorksByID.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SearchWorksByID.graphql; sourceTree = "<group>"; };
+		F887E07F24026E30008C6099 /* GetFollowingActivities.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GetFollowingActivities.graphql; sourceTree = "<group>"; };
+		F887E08024026E30008C6099 /* Fragment.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Fragment.graphql; sourceTree = "<group>"; };
+		F887E08124026E30008C6099 /* SearchWorks.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SearchWorks.graphql; sourceTree = "<group>"; };
+		F887E08224026E30008C6099 /* GetRecords.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GetRecords.graphql; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +139,6 @@
 				5B6459B7C126EF553B0F47AE /* Pods-anistoryTests.debug.xcconfig */,
 				DE0572C28CBF2561B6069F17 /* Pods-anistoryTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -183,9 +208,30 @@
 		F818CA3623FC2D9A00FF36F3 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				F887E07524026E17008C6099 /* GraphQL */,
 				F818CA3724023D7000FF36F3 /* ApiClient.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		F887E07524026E17008C6099 /* GraphQL */ = {
+			isa = PBXGroup;
+			children = (
+				F887E07D24026E30008C6099 /* CreateRecord.graphql */,
+				F887E07C24026E30008C6099 /* DeleteRecord.graphql */,
+				F887E07724026E30008C6099 /* EpisodeDetails.graphql */,
+				F887E08024026E30008C6099 /* Fragment.graphql */,
+				F887E07F24026E30008C6099 /* GetFollowingActivities.graphql */,
+				F887E08224026E30008C6099 /* GetRecords.graphql */,
+				F887E07B24026E30008C6099 /* GetViewerInfo.graphql */,
+				F887E07824026E30008C6099 /* GetViewerWatchingEpisodes.graphql */,
+				F887E07624026E30008C6099 /* GetViewerWorks.graphql */,
+				F887E08124026E30008C6099 /* SearchWorks.graphql */,
+				F887E07E24026E30008C6099 /* SearchWorksByID.graphql */,
+				F887E07A24026E30008C6099 /* SearchWorksByTitle.graphql */,
+				F887E07924026E30008C6099 /* UpdateStatus.graphql */,
+			);
+			path = GraphQL;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,9 +343,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F887E08B24026E30008C6099 /* SearchWorksByID.graphql in Resources */,
+				F887E08F24026E30008C6099 /* GetRecords.graphql in Resources */,
+				F887E08724026E30008C6099 /* SearchWorksByTitle.graphql in Resources */,
 				F818CA1323FC2C6A00FF36F3 /* LaunchScreen.storyboard in Resources */,
+				F887E08624026E30008C6099 /* UpdateStatus.graphql in Resources */,
 				F818CA1023FC2C6A00FF36F3 /* Preview Assets.xcassets in Resources */,
+				F887E08D24026E30008C6099 /* Fragment.graphql in Resources */,
 				F818CA0D23FC2C6A00FF36F3 /* Assets.xcassets in Resources */,
+				F887E08A24026E30008C6099 /* CreateRecord.graphql in Resources */,
+				F887E08924026E30008C6099 /* DeleteRecord.graphql in Resources */,
+				F887E08824026E30008C6099 /* GetViewerInfo.graphql in Resources */,
+				F887E08424026E30008C6099 /* EpisodeDetails.graphql in Resources */,
+				F887E08324026E30008C6099 /* GetViewerWorks.graphql in Resources */,
+				F887E08524026E30008C6099 /* GetViewerWatchingEpisodes.graphql in Resources */,
+				F887E08C24026E30008C6099 /* GetFollowingActivities.graphql in Resources */,
+				F887E08E24026E30008C6099 /* SearchWorks.graphql in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
