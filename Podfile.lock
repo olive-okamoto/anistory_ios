@@ -5,6 +5,7 @@ PODS:
   - Apollo/SQLite (0.23.0):
     - Apollo/Core
     - SQLite.swift (~> 0.12.2)
+  - RxSwift (5.0.1)
   - SQLite.swift (0.12.2):
     - SQLite.swift/standard (= 0.12.2)
   - SQLite.swift/standard (0.12.2)
@@ -12,16 +13,19 @@ PODS:
 DEPENDENCIES:
   - Apollo
   - Apollo/SQLite
+  - RxSwift
 
 SPEC REPOS:
   trunk:
     - Apollo
+    - RxSwift
     - SQLite.swift
 
 SPEC CHECKSUMS:
   Apollo: 7ccde5e643aab4a95ed4926fe9b3a593740c8b73
+  RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
   SQLite.swift: d2b4642190917051ce6bd1d49aab565fe794eea3
 
-PODFILE CHECKSUM: 325205527d4c08bd7462b3bcaf89c897dea4d3c6
+PODFILE CHECKSUM: 5251dbbed5fe7a51dc15e1076e974cb838f2b0ef
 
 COCOAPODS: 1.8.4

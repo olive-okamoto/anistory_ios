@@ -7,6 +7,7 @@ target 'anistory' do
 
   pod "Apollo"
   pod "Apollo/SQLite"
+  pod "RxSwift"
 
   target 'anistoryTests' do
     inherit! :search_paths
