@@ -31,6 +31,7 @@
 		F887E08D24026E30008C6099 /* Fragment.graphql in Resources */ = {isa = PBXBuildFile; fileRef = F887E08024026E30008C6099 /* Fragment.graphql */; };
 		F887E08E24026E30008C6099 /* SearchWorks.graphql in Resources */ = {isa = PBXBuildFile; fileRef = F887E08124026E30008C6099 /* SearchWorks.graphql */; };
 		F887E08F24026E30008C6099 /* GetRecords.graphql in Resources */ = {isa = PBXBuildFile; fileRef = F887E08224026E30008C6099 /* GetRecords.graphql */; };
+		F887E09224027A8E008C6099 /* ProfileDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F887E09124027A8E008C6099 /* ProfileDataSource.swift */; };
 		FA33C7ECE676BD8C15112ED1 /* Pods_anistoryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26ADDB22540A74DBEB77E025 /* Pods_anistoryTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +90,7 @@
 		F887E08024026E30008C6099 /* Fragment.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Fragment.graphql; sourceTree = "<group>"; };
 		F887E08124026E30008C6099 /* SearchWorks.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SearchWorks.graphql; sourceTree = "<group>"; };
 		F887E08224026E30008C6099 /* GetRecords.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GetRecords.graphql; sourceTree = "<group>"; };
+		F887E09124027A8E008C6099 /* ProfileDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 		F818CA0523FC2C6800FF36F3 /* anistory */ = {
 			isa = PBXGroup;
 			children = (
+				F887E0902402774B008C6099 /* Data */,
 				F818CA3623FC2D9A00FF36F3 /* API */,
 				F818CA0623FC2C6800FF36F3 /* AppDelegate.swift */,
 				F818CA0823FC2C6800FF36F3 /* SceneDelegate.swift */,
@@ -234,6 +237,14 @@
 			path = GraphQL;
 			sourceTree = "<group>";
 		};
+		F887E0902402774B008C6099 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F887E09124027A8E008C6099 /* ProfileDataSource.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -242,6 +253,7 @@
 			buildConfigurationList = F818CA2D23FC2C6A00FF36F3 /* Build configuration list for PBXNativeTarget "anistory" */;
 			buildPhases = (
 				8582579B02F1453BDECB26F6 /* [CP] Check Pods Manifest.lock */,
+				F887E0932402BE18008C6099 /* Generate Apollo GraphQL API */,
 				F818C9FF23FC2C6800FF36F3 /* Sources */,
 				F818CA0023FC2C6800FF36F3 /* Frameworks */,
 				F818CA0123FC2C6800FF36F3 /* Resources */,
@@ -479,6 +491,24 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-anistory-anistoryUITests/Pods-anistory-anistoryUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F887E0932402BE18008C6099 /* Generate Apollo GraphQL API */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Apollo GraphQL API";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "APOLLO_FRAMEWORK_PATH=\"$(eval find $FRAMEWORK_SEARCH_PATHS -name \"Apollo.framework\" -maxdepth 1)\"\n\nif [ -z \"$APOLLO_FRAMEWORK_PATH\" ]; then\n  echo \"error: Couldn't find Apollo.framework in FRAMEWORK_SEARCH_PATHS; make sure to add the framework to your project.\"\n  exit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n$APOLLO_FRAMEWORK_PATH/check-and-run-apollo-cli.sh codegen:generate --queries=\"$(find . -name '*.graphql')\" --schema=schema.json API.swift\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -488,6 +518,7 @@
 			files = (
 				F818CA0723FC2C6800FF36F3 /* AppDelegate.swift in Sources */,
 				F818CA0923FC2C6800FF36F3 /* SceneDelegate.swift in Sources */,
+				F887E09224027A8E008C6099 /* ProfileDataSource.swift in Sources */,
 				F818CA0B23FC2C6800FF36F3 /* ContentView.swift in Sources */,
 				F818CA3824023D7000FF36F3 /* GraphQLApiClient.swift in Sources */,
 			);
