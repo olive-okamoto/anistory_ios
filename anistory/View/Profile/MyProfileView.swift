@@ -19,7 +19,7 @@ struct MyProfileView: View {
                 Text("Followings")
                 Text("Follwers")
             }
-        }.frame(minWidth: 0, maxWidth: UIScreen.main.bounds.width, minHeight: 0, maxHeight: .infinity, alignment: .topLeading)
+        }.frame(minWidth: 0, maxWidth: UIScreen.main.bounds.width, minHeight: 0, maxHeight: .infinity, alignment: .top)
     }
 }
 

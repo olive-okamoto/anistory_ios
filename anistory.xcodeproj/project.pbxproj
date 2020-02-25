@@ -234,7 +234,6 @@
 			isa = PBXGroup;
 			children = (
 				F887057A240509280040566F /* Profile */,
-				F818CA0A23FC2C6800FF36F3 /* MyProfileView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -242,6 +241,7 @@
 		F887057A240509280040566F /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				F818CA0A23FC2C6800FF36F3 /* MyProfileView.swift */,
 				F8870578240507BC0040566F /* CircleThumbnailImage.swift */,
 			);
 			path = Profile;
