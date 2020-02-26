@@ -22,6 +22,7 @@
 		F818CA3824023D7000FF36F3 /* GraphQLApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F818CA3724023D7000FF36F3 /* GraphQLApiClient.swift */; };
 		F8870579240507BC0040566F /* CircleThumbnailImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8870578240507BC0040566F /* CircleThumbnailImage.swift */; };
 		F887057D240516480040566F /* MyProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F887057C240516480040566F /* MyProfilePresenter.swift */; };
+		F88705822406829E0040566F /* Apollo+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88705812406829E0040566F /* Apollo+Rx.swift */; };
 		F887E08324026E30008C6099 /* GetViewerWorks.graphql in Resources */ = {isa = PBXBuildFile; fileRef = F887E07624026E30008C6099 /* GetViewerWorks.graphql */; };
 		F887E08424026E30008C6099 /* EpisodeDetails.graphql in Resources */ = {isa = PBXBuildFile; fileRef = F887E07724026E30008C6099 /* EpisodeDetails.graphql */; };
 		F887E08524026E30008C6099 /* GetViewerWatchingEpisodes.graphql in Resources */ = {isa = PBXBuildFile; fileRef = F887E07824026E30008C6099 /* GetViewerWatchingEpisodes.graphql */; };
@@ -87,6 +88,7 @@
 		F818CA3724023D7000FF36F3 /* GraphQLApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLApiClient.swift; sourceTree = "<group>"; };
 		F8870578240507BC0040566F /* CircleThumbnailImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleThumbnailImage.swift; sourceTree = "<group>"; };
 		F887057C240516480040566F /* MyProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfilePresenter.swift; sourceTree = "<group>"; };
+		F88705812406829E0040566F /* Apollo+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Apollo+Rx.swift"; sourceTree = "<group>"; };
 		F887E07624026E30008C6099 /* GetViewerWorks.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GetViewerWorks.graphql; sourceTree = "<group>"; };
 		F887E07724026E30008C6099 /* EpisodeDetails.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = EpisodeDetails.graphql; sourceTree = "<group>"; };
 		F887E07824026E30008C6099 /* GetViewerWatchingEpisodes.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GetViewerWatchingEpisodes.graphql; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 		F818CA0523FC2C6800FF36F3 /* anistory */ = {
 			isa = PBXGroup;
 			children = (
+				F88705802406827F0040566F /* Extensions */,
 				F887057B240516290040566F /* Presenter */,
 				F8870577240505020040566F /* View */,
 				F887E0902402774B008C6099 /* Data */,
@@ -256,6 +259,22 @@
 				F887057C240516480040566F /* MyProfilePresenter.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F88705802406827F0040566F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F8870583240686830040566F /* Rx */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F8870583240686830040566F /* Rx */ = {
+			isa = PBXGroup;
+			children = (
+				F88705812406829E0040566F /* Apollo+Rx.swift */,
+			);
+			path = Rx;
 			sourceTree = "<group>";
 		};
 		F887E07524026E17008C6099 /* GraphQL */ = {
@@ -600,6 +619,7 @@
 				F818CA0923FC2C6800FF36F3 /* SceneDelegate.swift in Sources */,
 				F887E09224027A8E008C6099 /* ProfileDataSource.swift in Sources */,
 				F818CA0B23FC2C6800FF36F3 /* MyProfileView.swift in Sources */,
+				F88705822406829E0040566F /* Apollo+Rx.swift in Sources */,
 				F80F4A492402D2EA00FBD317 /* API.swift in Sources */,
 				F818CA3824023D7000FF36F3 /* GraphQLApiClient.swift in Sources */,
 			);
