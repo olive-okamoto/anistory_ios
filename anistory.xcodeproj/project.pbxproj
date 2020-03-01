@@ -41,6 +41,7 @@
 		F8B97823240B64FD00ED0131 /* ProfileWireframeInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B97822240B64FD00ED0131 /* ProfileWireframeInterface.swift */; };
 		F8B97826240B679700ED0131 /* ProfileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B97825240B679700ED0131 /* ProfileInteractor.swift */; };
 		F8B97829240B6BA800ED0131 /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B97828240B6BA800ED0131 /* ProfilePresenter.swift */; };
+		F8B9782C240B742600ED0131 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B9782B240B742600ED0131 /* ProfileViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +112,7 @@
 		F8B97822240B64FD00ED0131 /* ProfileWireframeInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileWireframeInterface.swift; sourceTree = "<group>"; };
 		F8B97825240B679700ED0131 /* ProfileInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInteractor.swift; sourceTree = "<group>"; };
 		F8B97828240B6BA800ED0131 /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
+		F8B9782B240B742600ED0131 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -326,6 +328,7 @@
 		F8B97820240B64AD00ED0131 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				F8B9782A240B740A00ED0131 /* View */,
 				F8B97827240B699B00ED0131 /* Presenter */,
 				F8B97824240B666F00ED0131 /* Interactor */,
 				F8B97821240B64BE00ED0131 /* Interface */,
@@ -355,6 +358,14 @@
 				F8B97828240B6BA800ED0131 /* ProfilePresenter.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F8B9782A240B740A00ED0131 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F8B9782B240B742600ED0131 /* ProfileViewModel.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -671,6 +682,7 @@
 				F818CA0923FC2C6800FF36F3 /* SceneDelegate.swift in Sources */,
 				F887E09224027A8E008C6099 /* ProfileDataSource.swift in Sources */,
 				F818CA0B23FC2C6800FF36F3 /* MyProfileView.swift in Sources */,
+				F8B9782C240B742600ED0131 /* ProfileViewModel.swift in Sources */,
 				F88705852406870A0040566F /* ObservableType+Extension.swift in Sources */,
 				F88705822406829E0040566F /* Apollo+Rx.swift in Sources */,
 				F8B97823240B64FD00ED0131 /* ProfileWireframeInterface.swift in Sources */,
