@@ -11,6 +11,7 @@ import RxSwift
 
 class ProfilePresenter: ProfileViewToPresenterProtocol {
     
+    var viewInput: ProfilePresenterToViewProtocol?
     var interactor: ProfilePresenterToInteractorProtocol
     var router: ProfilePresenterToRouterProtocol
     
@@ -21,13 +22,22 @@ class ProfilePresenter: ProfileViewToPresenterProtocol {
         self.router = router
     }
     
+    func setup(viewInput: ProfilePresenterToViewProtocol) {
+        self.viewInput = viewInput
+    }
+    
     func fetchProfile() {
         interactor.fetchProfile()
             .subscribe(
                 onNext: { [weak self] profile in
+                    guard let self = self else { return }
                     // TODO: Pass data to a view
+                    self.viewInput?.setProfile(profile: profile)
                 }, onError: nil, onCompleted: nil, onDisposed: nil)
             .disposed(by: disposeBag)
     }
         
+}
+
+extension ProfilePresenter: ProfileInteractorToPresenterProtocol {
 }
