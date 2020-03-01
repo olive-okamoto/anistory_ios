@@ -7,3 +7,26 @@
 //
 
 import Foundation
+import RxSwift
+
+class ProfileViewModel: ObservableObject {
+    
+    private var presenter: ProfileViewToPresenterProtocol
+    @Published var profileData: GetViewerInfoQuery.Data.Viewer?
+    
+    init(presenter: ProfileViewToPresenterProtocol) {
+        self.presenter = presenter
+    }
+    
+    func fetchProfile() {
+        presenter.fetchProfile()
+    }
+    
+}
+
+// MARK: ProfileViewInput
+extension ProfileViewModel: ProfilePresenterToViewProtocol {
+    func setProfile(profile: GetViewerInfoQuery.Data.Viewer) {
+        profileData = profile
+    }
+}

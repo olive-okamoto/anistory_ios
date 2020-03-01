@@ -14,7 +14,7 @@ protocol ProfileViewToPresenterProtocol: AnyObject {
 }
 
 protocol ProfilePresenterToViewProtocol: AnyObject {
-    
+    func setProfile(profile: GetViewerInfoQuery.Data.Viewer)
 }
 
 protocol ProfilePresenterToRouterProtocol: AnyObject {
@@ -26,6 +26,5 @@ protocol ProfilePresenterToInteractorProtocol: AnyObject {
 }
 
 protocol ProfileInteractorToPresenterProtocol: AnyObject {
-    func presentLoading()
 }
 
