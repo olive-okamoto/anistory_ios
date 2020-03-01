@@ -40,6 +40,7 @@
 		F8B97826240B679700ED0131 /* ProfileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B97825240B679700ED0131 /* ProfileInteractor.swift */; };
 		F8B97829240B6BA800ED0131 /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B97828240B6BA800ED0131 /* ProfilePresenter.swift */; };
 		F8B9782C240B742600ED0131 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B9782B240B742600ED0131 /* ProfileViewModel.swift */; };
+		F8B9782F240B835200ED0131 /* ProfileRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B9782E240B835200ED0131 /* ProfileRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +110,7 @@
 		F8B97825240B679700ED0131 /* ProfileInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInteractor.swift; sourceTree = "<group>"; };
 		F8B97828240B6BA800ED0131 /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
 		F8B9782B240B742600ED0131 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		F8B9782E240B835200ED0131 /* ProfileRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -306,6 +308,7 @@
 		F8B97820240B64AD00ED0131 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				F8B9782D240B833600ED0131 /* Router */,
 				F8B9782A240B740A00ED0131 /* View */,
 				F8B97827240B699B00ED0131 /* Presenter */,
 				F8B97824240B666F00ED0131 /* Interactor */,
@@ -344,6 +347,14 @@
 				F8B9782B240B742600ED0131 /* ProfileViewModel.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		F8B9782D240B833600ED0131 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F8B9782E240B835200ED0131 /* ProfileRouter.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -655,6 +666,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8870579240507BC0040566F /* CircleThumbnailImage.swift in Sources */,
+				F8B9782F240B835200ED0131 /* ProfileRouter.swift in Sources */,
 				F818CA0723FC2C6800FF36F3 /* AppDelegate.swift in Sources */,
 				F818CA0923FC2C6800FF36F3 /* SceneDelegate.swift in Sources */,
 				F818CA0B23FC2C6800FF36F3 /* MyProfileView.swift in Sources */,
