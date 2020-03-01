@@ -36,7 +36,6 @@
 		F887E08D24026E30008C6099 /* Fragment.graphql in Resources */ = {isa = PBXBuildFile; fileRef = F887E08024026E30008C6099 /* Fragment.graphql */; };
 		F887E08E24026E30008C6099 /* SearchWorks.graphql in Resources */ = {isa = PBXBuildFile; fileRef = F887E08124026E30008C6099 /* SearchWorks.graphql */; };
 		F887E08F24026E30008C6099 /* GetRecords.graphql in Resources */ = {isa = PBXBuildFile; fileRef = F887E08224026E30008C6099 /* GetRecords.graphql */; };
-		F887E09224027A8E008C6099 /* ProfileDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F887E09124027A8E008C6099 /* ProfileDataSource.swift */; };
 		F8B97823240B64FD00ED0131 /* ProfileWireframeInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B97822240B64FD00ED0131 /* ProfileWireframeInterface.swift */; };
 		F8B97826240B679700ED0131 /* ProfileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B97825240B679700ED0131 /* ProfileInteractor.swift */; };
 		F8B97829240B6BA800ED0131 /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B97828240B6BA800ED0131 /* ProfilePresenter.swift */; };
@@ -106,7 +105,6 @@
 		F887E08024026E30008C6099 /* Fragment.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Fragment.graphql; sourceTree = "<group>"; };
 		F887E08124026E30008C6099 /* SearchWorks.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SearchWorks.graphql; sourceTree = "<group>"; };
 		F887E08224026E30008C6099 /* GetRecords.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GetRecords.graphql; sourceTree = "<group>"; };
-		F887E09124027A8E008C6099 /* ProfileDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDataSource.swift; sourceTree = "<group>"; };
 		F8B97822240B64FD00ED0131 /* ProfileWireframeInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileWireframeInterface.swift; sourceTree = "<group>"; };
 		F8B97825240B679700ED0131 /* ProfileInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInteractor.swift; sourceTree = "<group>"; };
 		F8B97828240B6BA800ED0131 /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
@@ -196,7 +194,6 @@
 				F8B9781F240B620E00ED0131 /* Modules */,
 				F88705802406827F0040566F /* Extensions */,
 				F8870577240505020040566F /* View */,
-				F887E0902402774B008C6099 /* Data */,
 				F818CA3623FC2D9A00FF36F3 /* API */,
 				F818CA0623FC2C6800FF36F3 /* AppDelegate.swift */,
 				F818CA0823FC2C6800FF36F3 /* SceneDelegate.swift */,
@@ -296,14 +293,6 @@
 				F887E07924026E30008C6099 /* UpdateStatus.graphql */,
 			);
 			path = GraphQL;
-			sourceTree = "<group>";
-		};
-		F887E0902402774B008C6099 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				F887E09124027A8E008C6099 /* ProfileDataSource.swift */,
-			);
-			path = Data;
 			sourceTree = "<group>";
 		};
 		F8B9781F240B620E00ED0131 /* Modules */ = {
@@ -668,7 +657,6 @@
 				F8870579240507BC0040566F /* CircleThumbnailImage.swift in Sources */,
 				F818CA0723FC2C6800FF36F3 /* AppDelegate.swift in Sources */,
 				F818CA0923FC2C6800FF36F3 /* SceneDelegate.swift in Sources */,
-				F887E09224027A8E008C6099 /* ProfileDataSource.swift in Sources */,
 				F818CA0B23FC2C6800FF36F3 /* MyProfileView.swift in Sources */,
 				F8B9782C240B742600ED0131 /* ProfileViewModel.swift in Sources */,
 				F88705852406870A0040566F /* ObservableType+Extension.swift in Sources */,
