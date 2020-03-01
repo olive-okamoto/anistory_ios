@@ -7,3 +7,18 @@
 //
 
 import Foundation
+import RxSwift
+
+class ProfileInteractor: ProfilePresenterToInteractorProtocol {
+    
+    var presenter: ProfileInteractorToPresenterProtocol?
+    
+    private var client = GraphQLApiClient.client
+    
+    func fetchProfile() -> Observable<GetViewerInfoQuery.Data.Viewer> {
+        return client.rx.fetch(query: GetViewerInfoQuery(), cachePolicy: .returnCacheDataAndFetch).asObservable()
+        .map { $0.viewer }
+        .filterNil()
+    }
+    
+}
