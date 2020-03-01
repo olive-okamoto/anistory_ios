@@ -15,6 +15,10 @@ class ProfileInteractor: ProfilePresenterToInteractorProtocol {
     
     private var client = GraphQLApiClient.client
     
+    func setup(presenter: ProfileInteractorToPresenterProtocol) {
+        self.presenter = presenter
+    }
+    
     func fetchProfile() -> Observable<GetViewerInfoQuery.Data.Viewer> {
         return client.rx.fetch(query: GetViewerInfoQuery(), cachePolicy: .returnCacheDataAndFetch).asObservable()
         .map { $0.viewer }
