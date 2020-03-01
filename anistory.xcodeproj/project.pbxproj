@@ -38,6 +38,9 @@
 		F887E08E24026E30008C6099 /* SearchWorks.graphql in Resources */ = {isa = PBXBuildFile; fileRef = F887E08124026E30008C6099 /* SearchWorks.graphql */; };
 		F887E08F24026E30008C6099 /* GetRecords.graphql in Resources */ = {isa = PBXBuildFile; fileRef = F887E08224026E30008C6099 /* GetRecords.graphql */; };
 		F887E09224027A8E008C6099 /* ProfileDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F887E09124027A8E008C6099 /* ProfileDataSource.swift */; };
+		F8B97823240B64FD00ED0131 /* ProfileWireframeInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B97822240B64FD00ED0131 /* ProfileWireframeInterface.swift */; };
+		F8B97826240B679700ED0131 /* ProfileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B97825240B679700ED0131 /* ProfileInteractor.swift */; };
+		F8B97829240B6BA800ED0131 /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B97828240B6BA800ED0131 /* ProfilePresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +108,9 @@
 		F887E08124026E30008C6099 /* SearchWorks.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SearchWorks.graphql; sourceTree = "<group>"; };
 		F887E08224026E30008C6099 /* GetRecords.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GetRecords.graphql; sourceTree = "<group>"; };
 		F887E09124027A8E008C6099 /* ProfileDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDataSource.swift; sourceTree = "<group>"; };
+		F8B97822240B64FD00ED0131 /* ProfileWireframeInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileWireframeInterface.swift; sourceTree = "<group>"; };
+		F8B97825240B679700ED0131 /* ProfileInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInteractor.swift; sourceTree = "<group>"; };
+		F8B97828240B6BA800ED0131 /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +193,7 @@
 		F818CA0523FC2C6800FF36F3 /* anistory */ = {
 			isa = PBXGroup;
 			children = (
+				F8B9781F240B620E00ED0131 /* Modules */,
 				F88705802406827F0040566F /* Extensions */,
 				F887057B240516290040566F /* Presenter */,
 				F8870577240505020040566F /* View */,
@@ -306,6 +313,48 @@
 				F887E09124027A8E008C6099 /* ProfileDataSource.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		F8B9781F240B620E00ED0131 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				F8B97820240B64AD00ED0131 /* Profile */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		F8B97820240B64AD00ED0131 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				F8B97827240B699B00ED0131 /* Presenter */,
+				F8B97824240B666F00ED0131 /* Interactor */,
+				F8B97821240B64BE00ED0131 /* Interface */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		F8B97821240B64BE00ED0131 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				F8B97822240B64FD00ED0131 /* ProfileWireframeInterface.swift */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		F8B97824240B666F00ED0131 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F8B97825240B679700ED0131 /* ProfileInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F8B97827240B699B00ED0131 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F8B97828240B6BA800ED0131 /* ProfilePresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -624,8 +673,11 @@
 				F818CA0B23FC2C6800FF36F3 /* MyProfileView.swift in Sources */,
 				F88705852406870A0040566F /* ObservableType+Extension.swift in Sources */,
 				F88705822406829E0040566F /* Apollo+Rx.swift in Sources */,
+				F8B97823240B64FD00ED0131 /* ProfileWireframeInterface.swift in Sources */,
 				F80F4A492402D2EA00FBD317 /* API.swift in Sources */,
+				F8B97826240B679700ED0131 /* ProfileInteractor.swift in Sources */,
 				F818CA3824023D7000FF36F3 /* GraphQLApiClient.swift in Sources */,
+				F8B97829240B6BA800ED0131 /* ProfilePresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
