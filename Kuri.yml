@@ -1,0 +1,6 @@
+DefaultTemplateDirectoryPath: ./KuriTemplate/
+ProjectRootPath: ./
+ProjectFileName: anistory.xcodeproj
+GenerateRootPath: ./anistory/
+Target: anistory
+ShouldRemoveLayerNameFromDirectory: false
