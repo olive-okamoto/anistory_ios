@@ -30,4 +30,12 @@ extension ProfileViewModel: ProfilePresenterToViewProtocol {
     func setProfile(profile: GetViewerInfoQuery.Data.Viewer) {
         profileData = profile
     }
+    
+    func changeStatus(_ status: ProfileStatus) {
+        switch status {
+        case .loading: isLoading = true
+        case .normal: isLoading = false
+        case .error: break
+        }
+    }
 }

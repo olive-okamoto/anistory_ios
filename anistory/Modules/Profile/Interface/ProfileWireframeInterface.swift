@@ -17,6 +17,7 @@ protocol ProfileViewToPresenterProtocol: AnyObject {
 // MARK: Presenter to View
 protocol ProfilePresenterToViewProtocol: AnyObject {
     func setProfile(profile: GetViewerInfoQuery.Data.Viewer)
+    func changeStatus(_ status: ProfileStatus)
 }
 
 // MARK: Presenter to Router

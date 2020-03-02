@@ -9,6 +9,12 @@
 import Foundation
 import RxSwift
 
+enum ProfileStatus {
+    case loading
+    case normal
+    case error
+}
+
 class ProfilePresenter: ProfileViewToPresenterProtocol {
     
     var viewInput: ProfilePresenterToViewProtocol?
@@ -27,12 +33,19 @@ class ProfilePresenter: ProfileViewToPresenterProtocol {
     }
     
     func fetchProfile() {
+        viewInput?.changeStatus(.loading)
         interactor.fetchProfile()
             .subscribe(
                 onNext: { [weak self] profile in
                     guard let self = self else { return }
+                    self.viewInput?.changeStatus(.normal)
                     self.viewInput?.setProfile(profile: profile)
-                }, onError: nil, onCompleted: nil, onDisposed: nil)
+                },
+                onError: { [weak self] _ in
+                    guard let self = self else { return }
+                    self.viewInput?.changeStatus(.error)
+                },
+                onCompleted: nil, onDisposed: nil)
             .disposed(by: disposeBag)
     }
         
