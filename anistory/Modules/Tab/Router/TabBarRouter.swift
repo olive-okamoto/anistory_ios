@@ -7,3 +7,16 @@
 //
 
 import Foundation
+import SwiftUI
+
+class TabBarRouter {
+    
+    func associateView() -> AnyView {
+        let viewInput = TabBarViewModel()
+        let view = TabBarView(viewModel: viewInput)
+        let tabViewList: [AnyView] = [ProfileRouter().associatedView()]
+        viewInput.inject(tabViewList: tabViewList)
+        return AnyView(view)
+    }
+    
+}
