@@ -22,7 +22,11 @@ struct ProfileView: View {
             VStack(alignment: .center) {
                 CircleThumbnailImage()
                 
-                Text("Name").font(.title)
+                HStack {
+                    Text("ユーザー名：").font(.subheadline)
+                    viewModel.profileData.map { Text($0.username).font(.title) } ?? Text("---").font(.title)
+                }.frame(width: .none, height: 32)
+                
                 HStack {
                     VStack {
                         Text("Record")
