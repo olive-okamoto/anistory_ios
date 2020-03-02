@@ -195,7 +195,6 @@
 			children = (
 				F8B9781F240B620E00ED0131 /* Modules */,
 				F88705802406827F0040566F /* Extensions */,
-				F8870577240505020040566F /* View */,
 				F818CA3623FC2D9A00FF36F3 /* API */,
 				F818CA0623FC2C6800FF36F3 /* AppDelegate.swift */,
 				F818CA0823FC2C6800FF36F3 /* SceneDelegate.swift */,
@@ -241,23 +240,6 @@
 				F818CA3724023D7000FF36F3 /* GraphQLApiClient.swift */,
 			);
 			path = API;
-			sourceTree = "<group>";
-		};
-		F8870577240505020040566F /* View */ = {
-			isa = PBXGroup;
-			children = (
-				F887057A240509280040566F /* Profile */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		F887057A240509280040566F /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-				F818CA0A23FC2C6800FF36F3 /* MyProfileView.swift */,
-				F8870578240507BC0040566F /* CircleThumbnailImage.swift */,
-			);
-			path = Profile;
 			sourceTree = "<group>";
 		};
 		F88705802406827F0040566F /* Extensions */ = {
@@ -345,6 +327,8 @@
 			isa = PBXGroup;
 			children = (
 				F8B9782B240B742600ED0131 /* ProfileViewModel.swift */,
+				F818CA0A23FC2C6800FF36F3 /* MyProfileView.swift */,
+				F8870578240507BC0040566F /* CircleThumbnailImage.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
