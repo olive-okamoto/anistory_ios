@@ -16,7 +16,7 @@ class ProfileRouter: ProfilePresenterToRouterProtocol {
         let presenter = ProfilePresenter(interactor: interactor, router: self)
         let viewInput = ProfileViewModel()
         viewInput.inject(presenter: presenter)
-        let view = MyProfileView(viewModel: viewInput)
+        let view = ProfileView(viewModel: viewInput)
         interactor.inject(presenter: presenter)
         presenter.inject(viewInput: viewInput)
         return AnyView(view)

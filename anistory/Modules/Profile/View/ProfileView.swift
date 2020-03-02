@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct MyProfileView: View {
+struct ProfileView: View {
     
     @ObservedObject var viewModel: ProfileViewModel
     
@@ -42,6 +42,6 @@ struct MyProfileView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        MyProfileView(viewModel: ProfileViewModel())
+        ProfileView(viewModel: ProfileViewModel())
     }
 }
