@@ -21,29 +21,27 @@ struct MyProfileView: View {
             CircleThumbnailImage()
             
             Text("Name").font(.title)
-            viewModel.profileData.map({ profile in
-                HStack {
-                    VStack {
-                        Text("Record")
-                        Text(String(profile.recordsCount))
-                    }
-                    VStack {
-                        Text("Followings")
-                        Text(String(profile.followingsCount))
-                    }
-                    VStack {
-                        Text("Follwers")
-                        Text(String(profile.followersCount))
-                    }
+            HStack {
+                VStack {
+                    Text("Record")
+                    viewModel.profileData.map { Text(String($0.recordsCount)) }
                 }
-            })
+                VStack {
+                    Text("Followings")
+                    viewModel.profileData.map { Text(String($0.followingsCount)) }
+                }
+                VStack {
+                    Text("Follwers")
+                    viewModel.profileData.map { Text(String($0.followersCount)) }
+                }
+            }
         }.frame(minWidth: 0, maxWidth: UIScreen.main.bounds.width, minHeight: 0, maxHeight: .infinity, alignment: .top)
         .onAppear(perform: viewModel.fetchProfile)
     }
 }
 
-//struct ContentView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        MyProfileView()
-//    }
-//}
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        MyProfileView(viewModel: ProfileViewModel())
+    }
+}

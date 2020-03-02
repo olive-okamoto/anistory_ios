@@ -11,15 +11,11 @@ import RxSwift
 
 class ProfileViewModel: ObservableObject {
     
-    private var presenter: ProfileViewToPresenterProtocol
+    var presenter: ProfileViewToPresenterProtocol?
     @Published var profileData: GetViewerInfoQuery.Data.Viewer?
     
-    init(presenter: ProfileViewToPresenterProtocol) {
-        self.presenter = presenter
-    }
-    
     func fetchProfile() {
-        presenter.fetchProfile()
+        presenter?.fetchProfile()
     }
     
 }
