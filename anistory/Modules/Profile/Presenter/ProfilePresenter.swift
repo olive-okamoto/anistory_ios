@@ -31,7 +31,6 @@ class ProfilePresenter: ProfileViewToPresenterProtocol {
             .subscribe(
                 onNext: { [weak self] profile in
                     guard let self = self else { return }
-                    // TODO: Pass data to a view
                     self.viewInput?.setProfile(profile: profile)
                 }, onError: nil, onCompleted: nil, onDisposed: nil)
             .disposed(by: disposeBag)
