@@ -22,7 +22,7 @@ class ProfilePresenter: ProfileViewToPresenterProtocol {
         self.router = router
     }
     
-    func setup(viewInput: ProfilePresenterToViewProtocol) {
+    func inject(viewInput: ProfilePresenterToViewProtocol) {
         self.viewInput = viewInput
     }
     

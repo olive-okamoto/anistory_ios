@@ -11,8 +11,12 @@ import RxSwift
 
 class ProfileViewModel: ObservableObject {
     
-    var presenter: ProfileViewToPresenterProtocol?
+    private var presenter: ProfileViewToPresenterProtocol?
     @Published var profileData: GetViewerInfoQuery.Data.Viewer?
+    
+    func inject(presenter: ProfileViewToPresenterProtocol) {
+        self.presenter = presenter
+    }
     
     func fetchProfile() {
         presenter?.fetchProfile()

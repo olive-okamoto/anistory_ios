@@ -15,7 +15,7 @@ class ProfileInteractor: ProfilePresenterToInteractorProtocol {
     
     private var client = GraphQLApiClient.client
     
-    func setup(presenter: ProfileInteractorToPresenterProtocol) {
+    func inject(presenter: ProfileInteractorToPresenterProtocol) {
         self.presenter = presenter
     }
     
