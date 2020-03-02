@@ -17,26 +17,34 @@ struct ProfileView: View {
     }
     
     var body: some View {
-        VStack(alignment: .center) {
-            CircleThumbnailImage()
+        ZStack(alignment: .center) {
+            // MARK: User Profile
+            VStack(alignment: .center) {
+                CircleThumbnailImage()
+                
+                Text("Name").font(.title)
+                HStack {
+                    VStack {
+                        Text("Record")
+                        viewModel.profileData.map { Text(String($0.recordsCount)) }
+                    }
+                    VStack {
+                        Text("Followings")
+                        viewModel.profileData.map { Text(String($0.followingsCount)) }
+                    }
+                    VStack {
+                        Text("Follwers")
+                        viewModel.profileData.map { Text(String($0.followersCount)) }
+                    }
+                }
+            }.frame(minWidth: 0, maxWidth: UIScreen.main.bounds.width, minHeight: 0, maxHeight: .infinity, alignment: .top)
+            .onAppear(perform: viewModel.fetchProfile)
             
-            Text("Name").font(.title)
-            HStack {
-                VStack {
-                    Text("Record")
-                    viewModel.profileData.map { Text(String($0.recordsCount)) }
-                }
-                VStack {
-                    Text("Followings")
-                    viewModel.profileData.map { Text(String($0.followingsCount)) }
-                }
-                VStack {
-                    Text("Follwers")
-                    viewModel.profileData.map { Text(String($0.followersCount)) }
-                }
+            // MARK: ActivityIndicator
+            VStack {
+                ActivityIndicator(isAnimating: $viewModel.isLoading, style: .medium)
             }
-        }.frame(minWidth: 0, maxWidth: UIScreen.main.bounds.width, minHeight: 0, maxHeight: .infinity, alignment: .top)
-        .onAppear(perform: viewModel.fetchProfile)
+        }
     }
 }
 

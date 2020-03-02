@@ -13,6 +13,7 @@ class ProfileViewModel: ObservableObject {
     
     private var presenter: ProfileViewToPresenterProtocol?
     @Published var profileData: GetViewerInfoQuery.Data.Viewer?
+    @Published var isLoading: Bool = false
     
     func inject(presenter: ProfileViewToPresenterProtocol) {
         self.presenter = presenter
