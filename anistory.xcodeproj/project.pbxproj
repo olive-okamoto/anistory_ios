@@ -41,6 +41,9 @@
 		F8B97829240B6BA800ED0131 /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B97828240B6BA800ED0131 /* ProfilePresenter.swift */; };
 		F8B9782C240B742600ED0131 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B9782B240B742600ED0131 /* ProfileViewModel.swift */; };
 		F8B9782F240B835200ED0131 /* ProfileRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B9782E240B835200ED0131 /* ProfileRouter.swift */; };
+		F8B97832240CC02700ED0131 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B97831240CC02700ED0131 /* TabBarView.swift */; };
+		F8B97835240CC04C00ED0131 /* TabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B97834240CC04C00ED0131 /* TabBarViewModel.swift */; };
+		F8B9783C240CD9DD00ED0131 /* TabBarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B9783B240CD9DD00ED0131 /* TabBarRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +114,9 @@
 		F8B97828240B6BA800ED0131 /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
 		F8B9782B240B742600ED0131 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		F8B9782E240B835200ED0131 /* ProfileRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRouter.swift; sourceTree = "<group>"; };
+		F8B97831240CC02700ED0131 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		F8B97834240CC04C00ED0131 /* TabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewModel.swift; sourceTree = "<group>"; };
+		F8B9783B240CD9DD00ED0131 /* TabBarRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -282,6 +288,7 @@
 		F8B9781F240B620E00ED0131 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F8B97830240CC01700ED0131 /* Tab */,
 				F8B97820240B64AD00ED0131 /* Profile */,
 			);
 			path = Modules;
@@ -337,6 +344,32 @@
 			isa = PBXGroup;
 			children = (
 				F8B9782E240B835200ED0131 /* ProfileRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F8B97830240CC01700ED0131 /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				F8B9783A240CD9C800ED0131 /* Router */,
+				F8B97833240CC03700ED0131 /* View */,
+			);
+			path = Tab;
+			sourceTree = "<group>";
+		};
+		F8B97833240CC03700ED0131 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F8B97834240CC04C00ED0131 /* TabBarViewModel.swift */,
+				F8B97831240CC02700ED0131 /* TabBarView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F8B9783A240CD9C800ED0131 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F8B9783B240CD9DD00ED0131 /* TabBarRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -653,10 +686,13 @@
 				F8B9782F240B835200ED0131 /* ProfileRouter.swift in Sources */,
 				F818CA0723FC2C6800FF36F3 /* AppDelegate.swift in Sources */,
 				F818CA0923FC2C6800FF36F3 /* SceneDelegate.swift in Sources */,
+				F8B97835240CC04C00ED0131 /* TabBarViewModel.swift in Sources */,
+				F8B97832240CC02700ED0131 /* TabBarView.swift in Sources */,
 				F818CA0B23FC2C6800FF36F3 /* MyProfileView.swift in Sources */,
 				F8B9782C240B742600ED0131 /* ProfileViewModel.swift in Sources */,
 				F88705852406870A0040566F /* ObservableType+Extension.swift in Sources */,
 				F88705822406829E0040566F /* Apollo+Rx.swift in Sources */,
+				F8B9783C240CD9DD00ED0131 /* TabBarRouter.swift in Sources */,
 				F8B97823240B64FD00ED0131 /* ProfileWireframeInterface.swift in Sources */,
 				F80F4A492402D2EA00FBD317 /* API.swift in Sources */,
 				F8B97826240B679700ED0131 /* ProfileInteractor.swift in Sources */,
