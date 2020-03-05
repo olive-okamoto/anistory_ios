@@ -16,7 +16,7 @@ struct CircleThumbnailImage: View {
             .frame(width: 128, height: 128, alignment: .center)
             .clipShape(Circle())
             .overlay(
-                Circle().stroke(Color.gray, lineWidth: 4))
+                Circle().stroke(Color.gray, lineWidth: 2))
             .shadow(radius: 2)
     }
 }

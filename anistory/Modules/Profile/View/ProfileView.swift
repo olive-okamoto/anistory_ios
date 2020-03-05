@@ -30,15 +30,15 @@ struct ProfileView: View {
                 HStack {
                     VStack {
                         Text("Record")
-                        viewModel.profileData.map { Text(String($0.recordsCount)) }
+                        viewModel.profileData.map { Text(String($0.recordsCount)) } ?? Text("-").font(.title)
                     }
                     VStack {
                         Text("Followings")
-                        viewModel.profileData.map { Text(String($0.followingsCount)) }
+                        viewModel.profileData.map { Text(String($0.followingsCount)) } ?? Text("-").font(.title)
                     }
                     VStack {
                         Text("Follwers")
-                        viewModel.profileData.map { Text(String($0.followersCount)) }
+                        viewModel.profileData.map { Text(String($0.followersCount)) } ?? Text("-").font(.title)
                     }
                 }
             }.frame(minWidth: 0, maxWidth: UIScreen.main.bounds.width, minHeight: 0, maxHeight: .infinity, alignment: .top)
