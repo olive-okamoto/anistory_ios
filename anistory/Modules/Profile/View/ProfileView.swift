@@ -20,14 +20,14 @@ struct ProfileView: View {
         ZStack(alignment: .center) {
             // MARK: User Profile
             VStack(alignment: .center) {
-                CircleThumbnailImage()
+                CircleThumbnailImage().padding(.top, 20)
                 
                 HStack {
                     Text("ユーザー名：").font(.subheadline)
                     Text(viewModel.profileData?.username ?? "---").font(.title)
                 }.frame(width: .none, height: 32)
                 
-                HStack {
+                HStack(alignment: .center, spacing: 12) {
                     VStack {
                         Text("Record")
                         Text(String(viewModel.profileData?.recordsCount ?? 0))
@@ -41,7 +41,7 @@ struct ProfileView: View {
                         Text(String(viewModel.profileData?.followersCount ?? 0))
                     }
                 }
-            }.frame(minWidth: 0, maxWidth: UIScreen.main.bounds.width, minHeight: 0, maxHeight: .infinity, alignment: .top)
+            }.frame(maxWidth: UIScreen.main.bounds.width, maxHeight: UIScreen.main.bounds.height, alignment: .top)
             .onAppear(perform: viewModel.fetchProfile)
             
             // MARK: ActivityIndicator
