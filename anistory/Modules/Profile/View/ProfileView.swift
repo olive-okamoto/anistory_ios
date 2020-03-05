@@ -24,21 +24,21 @@ struct ProfileView: View {
                 
                 HStack {
                     Text("ユーザー名：").font(.subheadline)
-                    viewModel.profileData.map { Text($0.username).font(.title) } ?? Text("---").font(.title)
+                    Text(viewModel.profileData?.username ?? "---").font(.title)
                 }.frame(width: .none, height: 32)
                 
                 HStack {
                     VStack {
                         Text("Record")
-                        viewModel.profileData.map { Text(String($0.recordsCount)) } ?? Text("-").font(.title)
+                        Text(String(viewModel.profileData?.recordsCount ?? 0))
                     }
                     VStack {
                         Text("Followings")
-                        viewModel.profileData.map { Text(String($0.followingsCount)) } ?? Text("-").font(.title)
+                        Text(String(viewModel.profileData?.followingsCount ?? 0))
                     }
                     VStack {
                         Text("Follwers")
-                        viewModel.profileData.map { Text(String($0.followersCount)) } ?? Text("-").font(.title)
+                        Text(String(viewModel.profileData?.followersCount ?? 0))
                     }
                 }
             }.frame(minWidth: 0, maxWidth: UIScreen.main.bounds.width, minHeight: 0, maxHeight: .infinity, alignment: .top)
