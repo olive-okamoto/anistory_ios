@@ -46,6 +46,7 @@
 		F8B9783C240CD9DD00ED0131 /* TabBarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B9783B240CD9DD00ED0131 /* TabBarRouter.swift */; };
 		F8B97840240CE6C500ED0131 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B9783F240CE6C500ED0131 /* ActivityIndicator.swift */; };
 		F8CE55F92410D2C30077612A /* OptionalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CE55F82410D2C30077612A /* OptionalView.swift */; };
+		F8CE56012410E5C40077612A /* AnimeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CE56002410E5C40077612A /* AnimeListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +122,7 @@
 		F8B9783B240CD9DD00ED0131 /* TabBarRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarRouter.swift; sourceTree = "<group>"; };
 		F8B9783F240CE6C500ED0131 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		F8CE55F82410D2C30077612A /* OptionalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalView.swift; sourceTree = "<group>"; };
+		F8CE56002410E5C40077612A /* AnimeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -419,6 +421,7 @@
 		F8CE55FC2410E37B0077612A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F8CE56002410E5C40077612A /* AnimeListView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -759,6 +762,7 @@
 				F8B97835240CC04C00ED0131 /* TabBarViewModel.swift in Sources */,
 				F8B97832240CC02700ED0131 /* TabBarView.swift in Sources */,
 				F8CE55F92410D2C30077612A /* OptionalView.swift in Sources */,
+				F8CE56012410E5C40077612A /* AnimeListView.swift in Sources */,
 				F818CA0B23FC2C6800FF36F3 /* ProfileView.swift in Sources */,
 				F8B9782C240B742600ED0131 /* ProfileViewModel.swift in Sources */,
 				F88705852406870A0040566F /* ObservableType+Extension.swift in Sources */,
