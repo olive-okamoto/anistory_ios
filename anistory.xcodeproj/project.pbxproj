@@ -293,6 +293,7 @@
 		F8B9781F240B620E00ED0131 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F8CE55FA2410E2D10077612A /* AnimeList */,
 				F8B97830240CC01700ED0131 /* Tab */,
 				F8B97820240B64AD00ED0131 /* Profile */,
 			);
@@ -394,6 +395,53 @@
 				F8CE55F82410D2C30077612A /* OptionalView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		F8CE55FA2410E2D10077612A /* AnimeList */ = {
+			isa = PBXGroup;
+			children = (
+				F8CE55FB2410E36F0077612A /* Router */,
+				F8CE55FC2410E37B0077612A /* View */,
+				F8CE55FD2410E3820077612A /* Presenter */,
+				F8CE55FE2410E3900077612A /* Interactor */,
+				F8CE55FF2410E3990077612A /* Interface */,
+			);
+			path = AnimeList;
+			sourceTree = "<group>";
+		};
+		F8CE55FB2410E36F0077612A /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F8CE55FC2410E37B0077612A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F8CE55FD2410E3820077612A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F8CE55FE2410E3900077612A /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F8CE55FF2410E3990077612A /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interface;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
