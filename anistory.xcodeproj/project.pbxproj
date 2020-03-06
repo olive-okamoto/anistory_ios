@@ -49,6 +49,7 @@
 		F8CE56012410E5C40077612A /* AnimeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CE56002410E5C40077612A /* AnimeListView.swift */; };
 		F8CE56032410EA370077612A /* AnimeListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CE56022410EA360077612A /* AnimeListInteractor.swift */; };
 		F8CE56052411E2580077612A /* AnimeListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CE56042411E2580077612A /* AnimeListPresenter.swift */; };
+		F8CE56072411E34F0077612A /* AnimeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CE56062411E34F0077612A /* AnimeListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +128,7 @@
 		F8CE56002410E5C40077612A /* AnimeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeListView.swift; sourceTree = "<group>"; };
 		F8CE56022410EA360077612A /* AnimeListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeListInteractor.swift; sourceTree = "<group>"; };
 		F8CE56042411E2580077612A /* AnimeListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeListPresenter.swift; sourceTree = "<group>"; };
+		F8CE56062411E34F0077612A /* AnimeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -425,6 +427,7 @@
 		F8CE55FC2410E37B0077612A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F8CE56062411E34F0077612A /* AnimeListViewModel.swift */,
 				F8CE56002410E5C40077612A /* AnimeListView.swift */,
 			);
 			path = View;
@@ -774,6 +777,7 @@
 				F88705852406870A0040566F /* ObservableType+Extension.swift in Sources */,
 				F88705822406829E0040566F /* Apollo+Rx.swift in Sources */,
 				F8B9783C240CD9DD00ED0131 /* TabBarRouter.swift in Sources */,
+				F8CE56072411E34F0077612A /* AnimeListViewModel.swift in Sources */,
 				F8B97823240B64FD00ED0131 /* ProfileWireframeInterface.swift in Sources */,
 				F80F4A492402D2EA00FBD317 /* API.swift in Sources */,
 				F8CE56052411E2580077612A /* AnimeListPresenter.swift in Sources */,
