@@ -8,11 +8,11 @@
 
 import Foundation
 
-protocol AnimeListViewToPresenter {
+protocol AnimeListViewToPresenterProtocol {
     
 }
 
-protocol AnimeListInteractorToPresenter {
+protocol AnimeListInteractorToPresenterProtocol {
     
 }
 

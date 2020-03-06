@@ -9,11 +9,11 @@
 import Foundation
 import RxSwift
 
-protocol AnimeListPresenterToInteractor {
+protocol AnimeListPresenterToInteractorProtocol {
     func fetch() -> Observable<SearchWorksQuery.Data.SearchWork>
 }
 
-class AnimeListInteractor: AnimeListPresenterToInteractor {
+class AnimeListInteractor: AnimeListPresenterToInteractorProtocol {
     
     private var client = GraphQLApiClient.client
     
