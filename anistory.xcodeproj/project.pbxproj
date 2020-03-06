@@ -47,6 +47,7 @@
 		F8B97840240CE6C500ED0131 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B9783F240CE6C500ED0131 /* ActivityIndicator.swift */; };
 		F8CE55F92410D2C30077612A /* OptionalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CE55F82410D2C30077612A /* OptionalView.swift */; };
 		F8CE56012410E5C40077612A /* AnimeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CE56002410E5C40077612A /* AnimeListView.swift */; };
+		F8CE56032410EA370077612A /* AnimeListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CE56022410EA360077612A /* AnimeListInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +124,7 @@
 		F8B9783F240CE6C500ED0131 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		F8CE55F82410D2C30077612A /* OptionalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalView.swift; sourceTree = "<group>"; };
 		F8CE56002410E5C40077612A /* AnimeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeListView.swift; sourceTree = "<group>"; };
+		F8CE56022410EA360077612A /* AnimeListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeListInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -436,6 +438,7 @@
 		F8CE55FE2410E3900077612A /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				F8CE56022410EA360077612A /* AnimeListInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -772,6 +775,7 @@
 				F80F4A492402D2EA00FBD317 /* API.swift in Sources */,
 				F8B97826240B679700ED0131 /* ProfileInteractor.swift in Sources */,
 				F818CA3824023D7000FF36F3 /* GraphQLApiClient.swift in Sources */,
+				F8CE56032410EA370077612A /* AnimeListInteractor.swift in Sources */,
 				F8B97829240B6BA800ED0131 /* ProfilePresenter.swift in Sources */,
 				F8B97840240CE6C500ED0131 /* ActivityIndicator.swift in Sources */,
 			);
