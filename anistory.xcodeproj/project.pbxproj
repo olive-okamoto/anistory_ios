@@ -48,6 +48,7 @@
 		F8CE55F92410D2C30077612A /* OptionalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CE55F82410D2C30077612A /* OptionalView.swift */; };
 		F8CE56012410E5C40077612A /* AnimeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CE56002410E5C40077612A /* AnimeListView.swift */; };
 		F8CE56032410EA370077612A /* AnimeListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CE56022410EA360077612A /* AnimeListInteractor.swift */; };
+		F8CE56052411E2580077612A /* AnimeListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CE56042411E2580077612A /* AnimeListPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +126,7 @@
 		F8CE55F82410D2C30077612A /* OptionalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalView.swift; sourceTree = "<group>"; };
 		F8CE56002410E5C40077612A /* AnimeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeListView.swift; sourceTree = "<group>"; };
 		F8CE56022410EA360077612A /* AnimeListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeListInteractor.swift; sourceTree = "<group>"; };
+		F8CE56042411E2580077612A /* AnimeListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeListPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -431,6 +433,7 @@
 		F8CE55FD2410E3820077612A /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				F8CE56042411E2580077612A /* AnimeListPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -773,6 +776,7 @@
 				F8B9783C240CD9DD00ED0131 /* TabBarRouter.swift in Sources */,
 				F8B97823240B64FD00ED0131 /* ProfileWireframeInterface.swift in Sources */,
 				F80F4A492402D2EA00FBD317 /* API.swift in Sources */,
+				F8CE56052411E2580077612A /* AnimeListPresenter.swift in Sources */,
 				F8B97826240B679700ED0131 /* ProfileInteractor.swift in Sources */,
 				F818CA3824023D7000FF36F3 /* GraphQLApiClient.swift in Sources */,
 				F8CE56032410EA370077612A /* AnimeListInteractor.swift in Sources */,
