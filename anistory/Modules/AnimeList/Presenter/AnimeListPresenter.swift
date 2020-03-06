@@ -7,3 +7,15 @@
 //
 
 import Foundation
+
+protocol AnimeListViewToPresenter {
+    
+}
+
+protocol AnimeListInteractorToPresenter {
+    
+}
+
+class AnimeListPresenter {
+    
+}
