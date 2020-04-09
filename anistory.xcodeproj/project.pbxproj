@@ -36,6 +36,7 @@
 		F887E08D24026E30008C6099 /* Fragment.graphql in Resources */ = {isa = PBXBuildFile; fileRef = F887E08024026E30008C6099 /* Fragment.graphql */; };
 		F887E08E24026E30008C6099 /* SearchWorks.graphql in Resources */ = {isa = PBXBuildFile; fileRef = F887E08124026E30008C6099 /* SearchWorks.graphql */; };
 		F887E08F24026E30008C6099 /* GetRecords.graphql in Resources */ = {isa = PBXBuildFile; fileRef = F887E08224026E30008C6099 /* GetRecords.graphql */; };
+		F88A6C0B243EBB63008FE896 /* AnimeListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88A6C0A243EBB63008FE896 /* AnimeListRouter.swift */; };
 		F8B97823240B64FD00ED0131 /* ProfileWireframeInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B97822240B64FD00ED0131 /* ProfileWireframeInterface.swift */; };
 		F8B97826240B679700ED0131 /* ProfileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B97825240B679700ED0131 /* ProfileInteractor.swift */; };
 		F8B97829240B6BA800ED0131 /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B97828240B6BA800ED0131 /* ProfilePresenter.swift */; };
@@ -115,6 +116,7 @@
 		F887E08024026E30008C6099 /* Fragment.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Fragment.graphql; sourceTree = "<group>"; };
 		F887E08124026E30008C6099 /* SearchWorks.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SearchWorks.graphql; sourceTree = "<group>"; };
 		F887E08224026E30008C6099 /* GetRecords.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GetRecords.graphql; sourceTree = "<group>"; };
+		F88A6C0A243EBB63008FE896 /* AnimeListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeListRouter.swift; sourceTree = "<group>"; };
 		F8B97822240B64FD00ED0131 /* ProfileWireframeInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileWireframeInterface.swift; sourceTree = "<group>"; };
 		F8B97825240B679700ED0131 /* ProfileInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInteractor.swift; sourceTree = "<group>"; };
 		F8B97828240B6BA800ED0131 /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
@@ -420,6 +422,7 @@
 		F8CE55FB2410E36F0077612A /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				F88A6C0A243EBB63008FE896 /* AnimeListRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -776,6 +779,7 @@
 				F8B9782C240B742600ED0131 /* ProfileViewModel.swift in Sources */,
 				F88705852406870A0040566F /* ObservableType+Extension.swift in Sources */,
 				F88705822406829E0040566F /* Apollo+Rx.swift in Sources */,
+				F88A6C0B243EBB63008FE896 /* AnimeListRouter.swift in Sources */,
 				F8B9783C240CD9DD00ED0131 /* TabBarRouter.swift in Sources */,
 				F8CE56072411E34F0077612A /* AnimeListViewModel.swift in Sources */,
 				F8B97823240B64FD00ED0131 /* ProfileWireframeInterface.swift in Sources */,
