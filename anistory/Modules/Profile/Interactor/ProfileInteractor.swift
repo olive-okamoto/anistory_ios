@@ -24,5 +24,5 @@ class ProfileInteractor: ProfilePresenterToInteractorProtocol {
         .map { $0.viewer }
         .filterNil()
     }
-    
+
 }

@@ -14,7 +14,10 @@ class TabBarRouter {
     func associateView() -> AnyView {
         let viewInput = TabBarViewModel()
         let view = TabBarView(viewModel: viewInput)
-        let tabViewList: [AnyView] = [ProfileRouter().associatedView()]
+        let tabViewList: [AnyView] = [
+            AnimeListRouter().associatedView(),
+            ProfileRouter().associatedView()
+        ]
         viewInput.inject(tabViewList: tabViewList)
         return AnyView(view)
     }
